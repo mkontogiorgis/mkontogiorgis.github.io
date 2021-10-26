@@ -1,7 +1,17 @@
-<!DOCTYPE html>
 <html>
+	<title>Search in movies</title>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p><p>I'm hosted with GitHub Pages.</p>
+
+<form action="search_results.php" method="post">
+	Pick Category: <select name="category">
+						  <option value="all" selected="selected">All</option>
+						  <option value="comedy">comedy</option>
+						  <option value="drama">drama</option>
+						  <option value="horror">horror</option>
+					</select>
+	Search: <input type="text" name="search_string">
+	<input type="submit" value="Submit Query">
+</form>
+
 </body>
 </html>
